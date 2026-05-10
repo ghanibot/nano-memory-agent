@@ -1,0 +1,17 @@
+namespace: "my-project"
+
+embedder:
+  provider: local           # or: openai
+  model: "all-MiniLM-L6-v2"
+
+store:
+  path: "~/.nano-memory"
+
+budget:
+  max_cost_usd: 5.0
+  alert_at_percent: 0.8
+  kill_on_exceed: false
+
+top_k: 5
+chunk_size: 512
+chunk_overlap: 64
